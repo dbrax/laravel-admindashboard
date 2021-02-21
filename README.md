@@ -3,7 +3,7 @@
 
 ## About Laravel-AdminDashboard
 
-Fastes Way to get started with an admin panel on laravel.
+Fastest Way to get started with an admin panel on laravel.
 This project consumes laravel breeze authentication features but extends more common functionalities that we as developers usually encouter on various projects.
 
 ## Contributing
