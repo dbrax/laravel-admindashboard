@@ -10,10 +10,15 @@ class Alert extends Component
      * Create a new component instance.
      *
      * @return void
+     * 
      */
-    public function __construct()
+    public $alert;
+    public $message;
+    public function __construct($alert,$message )
     {
         //
+        $this->alert=$alert;
+        $this->message=$message;
     }
 
     /**
@@ -23,6 +28,9 @@ class Alert extends Component
      */
     public function render()
     {
-        return view('components.alert');
+
+        $type = $this->alert; //error info warning
+        $message = $this->message;
+        return view('components.alert', ['alert_type' => $type, 'message' => $message]);
     }
 }

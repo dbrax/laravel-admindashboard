@@ -7,7 +7,8 @@
         </x-slot>
 
         <!-- Validation Errors -->
-        <x-auth-validation-errors class="mb-4" :errors="$errors" />
+        <x-tailwind-validation-alert class="mb-4" />
+
 
         <form method="POST" action="{{ route('register') }}">
             @csrf
