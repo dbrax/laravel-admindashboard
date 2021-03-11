@@ -1,7 +1,5 @@
 <x-app-layout>
-    
-    
-    
+
     
     <x-home-dash-content/>
 

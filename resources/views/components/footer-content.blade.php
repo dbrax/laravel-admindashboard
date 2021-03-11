@@ -277,5 +277,7 @@ function openDropdown(event, dropdownID) {
   window.myBar = new Chart(ctx, config);
 })();
 </script>
+
+@livewireScripts
 </body>
 </html>

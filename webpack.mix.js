@@ -11,8 +11,16 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js').postCss('resources/css/app.css', 'public/css', [
-    require('postcss-import'),
-    require('tailwindcss'),
-    require('autoprefixer'),
-]);
+
+require('laravel-mix-tailwind');
+mix.js("resources/js/app.js", "public/js/app.js")
+    .sass("resources/sass/app.scss", "public/css/dt.css")
+    .tailwind("./tailwind.config.js")
+    .sourceMaps()
+    .browserSync({
+        proxy: 'https://demo-livewire-datatables.test',
+        https: true,
+    });
+if (mix.inProduction()) {
+    mix.version();
+}

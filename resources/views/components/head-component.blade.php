@@ -15,12 +15,26 @@
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
         />
+
         <link
           rel="stylesheet"
           href="../../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"
         />
         <link rel="stylesheet" href="../../assets/styles/tailwind.css" />
-        <title>Dashboard | Notus JS by Creative Tim</title>
+
+        <link rel="stylesheet" href="{{ mix('css/dt.css') }}">
+
+        <title>@yield('title')</title>
+
+        <style type="text/css">
+          [x-cloak] {
+            display: none;
+        }
+
+        </style>
+
+        @livewireStyles
+
       </head>
      
 </div>
