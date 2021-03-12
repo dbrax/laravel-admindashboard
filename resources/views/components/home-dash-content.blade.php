@@ -69,6 +69,7 @@
         
         <x-home-stat-card/>
 
+        <br>
 
         <livewire:datatable 
         model="App\Models\User" 

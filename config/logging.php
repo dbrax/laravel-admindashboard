@@ -49,7 +49,7 @@ return [
 
         'daily' => [
             'driver' => 'daily',
-            'path' => storage_path("logs/".env('APP_NAME','adminsys').".log"),
+            'path' => storage_path("logs/".config('dashboard.app_name_slug').".log"),
             'level' => env('LOG_LEVEL', 'debug'),
             'days' => 14,
         ],

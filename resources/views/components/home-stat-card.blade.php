@@ -1,4 +1,4 @@
-<div class="relative bg-pink-600 md:pt-32 pb-32 pt-12">
+<div class="relative bg-indigo-400	 md:pt-32 pb-32 pt-12">
 
 
 
